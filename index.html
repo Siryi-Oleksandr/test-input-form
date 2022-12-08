@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="title">Test</h1>
+			<label class="output-field__title" for="name">Name/Value Pair</label>
+			<div class="group">
+				<input class="input js-input" id="name" type="text" data-value />
+				<button class="btn btn-input" type="button" data-add>Add</button>
+			</div>
+			<p class="output-field__title">Name/Value Pair List</p>
+			<div class="group">
+				<div class="output__field js-output__field"></div>
+
+				<div class="action-group js-action">
+					<button class="btn" type="button" data-action="sort-by-name">Sort by Name</button>
+					<button class="btn" type="button" data-action="sort-by-value">Sort by Value</button>
+					<button class="btn" type="button" data-action="delete">Delete</button>
+					<button class="btn" type="button" data-action="magic">Show magic</button>
+				</div>
+			</div>
+			<div class="js-wrapper"></div>
+		</div>
+		<script src="./js/dom.js" type="module"></script>
+	</body>
+</html>
